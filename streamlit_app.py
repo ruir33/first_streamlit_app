@@ -36,7 +36,7 @@ streamlit.dataframe(fruityvice_normalized)
 
 
 import snowflake.connector
-my_cnx = snowflake.connector.connect(**streamlit.secrets["ruir3SNOWFLAKE#2022_labs2" ])
+my_cnx = snowflake.connector.connect(**streamlit.secrets["ruir33.trainings.2022@gmail.com_#SNOWFLLAKE" ])
 my_cur = my_cnx.cursor( )
 my_cur.execute("SELECT CURRENT_USER( ) , CURRENT_ACCOUNT ( ) , CURRENT_REGION()")
 my_data_row = my_cur.fetchone( )
